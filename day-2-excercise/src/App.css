@@ -1,0 +1,20 @@
+#root {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}

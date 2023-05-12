@@ -27,11 +27,7 @@ export default function Nav() {
               id="mobile-menu"
             >
               <a className="navbar-brand off" href="./index.html">
-                <img
-                  src="./img/logo-brand/logo-brand.png"
-                  className="w-50"
-                  alt=""
-                />
+                <img src="./icon/logo-brand.png" className="w-50" alt="" />
               </a>
               <ul className="navbar-nav">
                 <li className="nav-item border-bottom py-2">
@@ -123,33 +119,33 @@ export default function Nav() {
             >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a
+                  <NavLink
+                    to="/"
                     className="nav-link active"
                     aria-current="page"
-                    href="./index.html"
                   >
                     TRANG CHỦ
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./products.html">
+                  <NavLink className="nav-link" to="">
                     SẢN PHẨM
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./blog.html">
+                  <NavLink className="nav-link" to="/blog">
                     CATBLOG
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./about.html">
+                  <NavLink className="nav-link" to="/about">
                     GIỚI THIỆU
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="./contact.html">
+                  <NavLink className="nav-link" to="/contact">
                     LIÊN HỆ
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>

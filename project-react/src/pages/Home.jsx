@@ -679,9 +679,9 @@ export default function Home() {
             <span>MÈO CƯNG</span>
           </div>
           <div className="cat-listing">
-            <div className="container">
-              <div className="row d-flex">{itemCard}</div>
-            </div>
+            <Container>
+              <Row>{itemCard}</Row>
+            </Container>
           </div>
         </section>
         {/* Sản phẩm theo chủ đề Thực phẩm */}

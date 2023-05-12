@@ -11,7 +11,7 @@ export default function Home() {
       <div className="main-content">
         {/* Banner */}
         <section className="banner">
-          <OwlCarousel 
+          <OwlCarousel
             className="owl-theme"
             loop
             margin={10}
@@ -106,12 +106,15 @@ export default function Home() {
             <div role="tabpanel" className="tab-pane active" id="home">
               <div className="container">
                 <div className="new-product">
-                  <div className="owl-2 owl-carousel owl-theme">
+                  <OwlCarousel className="owl-carousel owl-theme">
                     <a href="./detail-product.html?id=8">
                       <div className="item-card">
                         <div className="item-content">
                           <div className="card-thumbnail">
-                            <img src="./img/cat-thumbnail/8.jpg" alt="" />
+                            <img
+                              src="./product-thumbnails/cat-thumbnail/8.jpg"
+                              alt=""
+                            />
                           </div>
                           <div className="card-content">
                             <div className="card-name">Munchkin Xanh Xám</div>
@@ -143,7 +146,10 @@ export default function Home() {
                       <div className="item-card">
                         <div className="item-content">
                           <div className="card-thumbnail">
-                            <img src="./img/food-thumbnail/5.jpg" alt="" />
+                            <img
+                              src="./product-thumbnails/food-thumbnail/5.jpg"
+                              alt=""
+                            />
                           </div>
                           <div className="card-content">
                             <div className="card-name">
@@ -177,7 +183,10 @@ export default function Home() {
                       <div className="item-card">
                         <div className="item-content">
                           <div className="card-thumbnail">
-                            <img src="./img/food-thumbnail/10.jpg" alt="" />
+                            <img
+                              src="./product-thumbnails/food-thumbnail/10.jpg"
+                              alt=""
+                            />
                           </div>
                           <div className="card-content">
                             <div className="card-name">Zenith Cat 1.2kg</div>
@@ -209,7 +218,10 @@ export default function Home() {
                       <div className="item-card">
                         <div className="item-content">
                           <div className="card-thumbnail">
-                            <img src="./img/food-thumbnail/9.jpg" alt="" />
+                            <img
+                              src="./product-thumbnails/food-thumbnail/9.jpg"
+                              alt=""
+                            />
                           </div>
                           <div className="card-content">
                             <div className="card-name">
@@ -244,7 +256,7 @@ export default function Home() {
                         <div className="item-content">
                           <div className="card-thumbnail">
                             <img
-                              src="./img/accessories-thumbnail/5.jpg"
+                              src="./product-thumbnails/accessories-thumbnail/5.jpg"
                               alt=""
                             />
                           </div>
@@ -274,19 +286,32 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                  </div>
+                  </OwlCarousel>
                 </div>
               </div>
             </div>
             <div role="tabpanel" className="tab-pane" id="profile">
               <div className="container">
                 <div className="new-product">
-                  <div className="owl-2 owl-carousel owl-theme">
+                  <OwlCarousel
+                    className="owl-carousel owl-theme"
+                    loop
+                    margin={24}
+                    center
+                    autoplay
+                    smartSpeed={500}
+                    items={4}
+                    dots:false
+                    nav
+                  >
                     <a href="./detail-product.html?id=11">
                       <div className="item-card">
                         <div className="item-content">
                           <div className="card-thumbnail">
-                            <img src="./img/food-thumbnail/1.jpg" alt="" />
+                            <img
+                              src="./product-thumbnails/food-thumbnail/1.jpg"
+                              alt=""
+                            />
                           </div>
                           <div className="card-content">
                             <div className="card-name">Maxim Cá hồi 400g</div>
@@ -318,7 +343,10 @@ export default function Home() {
                       <div className="item-card">
                         <div className="item-content">
                           <div className="card-thumbnail">
-                            <img src="./img/food-thumbnail/1.jpg" alt="" />
+                            <img
+                              src="./product-thumbnails/food-thumbnail/1.jpg"
+                              alt=""
+                            />
                           </div>
                           <div className="card-content">
                             <div className="card-name">
@@ -353,7 +381,7 @@ export default function Home() {
                         <div className="item-content">
                           <div className="card-thumbnail">
                             <img
-                              src="./img/accessories-thumbnail/1.jpg"
+                              src="./product-thumbnails/accessories-thumbnail/1.jpg"
                               alt=""
                             />
                           </div>
@@ -387,7 +415,10 @@ export default function Home() {
                       <div className="item-card">
                         <div className="item-content">
                           <div className="card-thumbnail">
-                            <img src="./img/cat-thumbnail/6.jpg?id=6" alt="" />
+                            <img
+                              src="./product-thumbnails/cat-thumbnail/6.jpg?id=6"
+                              alt=""
+                            />
                           </div>
                           <div className="card-content">
                             <div className="card-name">
@@ -422,7 +453,7 @@ export default function Home() {
                         <div className="item-content">
                           <div className="card-thumbnail">
                             <img
-                              src="./img/accessories-thumbnail/5.jpg"
+                              src="./product-thumbnails/accessories-thumbnail/5.jpg"
                               alt=""
                             />
                           </div>
@@ -452,7 +483,7 @@ export default function Home() {
                         </div>
                       </div>
                     </a>
-                  </div>
+                  </OwlCarousel>
                 </div>
               </div>
             </div>
@@ -498,7 +529,10 @@ export default function Home() {
                     <a href="./detail-product.html?id=7">
                       <div className="sale-off-item">
                         <div className="sale-off-thumbnail">
-                          <img src="./img/cat-thumbnail/7.jpg" alt="" />
+                          <img
+                            src="./product-thumbnails/cat-thumbnail/7.jpg"
+                            alt=""
+                          />
                           <div className="sale-off-tag">-15%</div>
                         </div>
                         <div className="sale-off-card-content">
@@ -519,7 +553,10 @@ export default function Home() {
                     <a href="./detail-product.html?id=8">
                       <div className="sale-off-item">
                         <div className="sale-off-thumbnail">
-                          <img src="./img/cat-thumbnail/8.jpg" alt="" />
+                          <img
+                            src="./product-thumbnails/cat-thumbnail/8.jpg"
+                            alt=""
+                          />
                           <div className="sale-off-tag">-10%</div>
                         </div>
                         <div className="sale-off-card-content">
@@ -540,7 +577,10 @@ export default function Home() {
                     <a href="./detail-product.html?id=13">
                       <div className="sale-off-item">
                         <div className="sale-off-thumbnail">
-                          <img src="./img/food-thumbnail/3.jpg" alt="" />
+                          <img
+                            src="./product-thumbnails/food-thumbnail/3.jpg"
+                            alt=""
+                          />
                           <div className="sale-off-tag">-14%</div>
                         </div>
                         <div className="sale-off-card-content">
@@ -559,7 +599,10 @@ export default function Home() {
                     <a href="./detail-product.html?id=17">
                       <div className="sale-off-item">
                         <div className="sale-off-thumbnail">
-                          <img src="./img/food-thumbnail/7.jpg" alt="" />
+                          <img
+                            src="./product-thumbnails/food-thumbnail/7.jpg"
+                            alt=""
+                          />
                           <div className="sale-off-tag">-8%</div>
                         </div>
                         <div className="sale-off-card-content">

@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./nav.css";
 
-
 export default function Nav() {
   return (
     <div className="nav">
@@ -21,7 +20,7 @@ export default function Nav() {
               <span className="navbar-toggler-icon" />
             </button>
             <a className="navbar-brand" href="./index.html">
-              <img src="./img/logo-brand/logo-brand.png" alt="" />
+              <img src="./icon/logo-brand.png" alt="" />
             </a>
             <div
               className="offcanvas offcanvas-start d-lg-none px-3 w-50"

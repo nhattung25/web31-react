@@ -6,11 +6,11 @@ import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 
 const options2 = {
-  margin: 20,
+  margin: 15,
   responsiveClass: true,
   nav: true,
   dots: false,
-  autoplay: false,
+  autoplay: true,
   smartSpeed: 500,
   responsive: {
     0: {

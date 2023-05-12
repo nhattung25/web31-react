@@ -11,6 +11,7 @@ const options2 = {
   nav: true,
   dots: false,
   autoplay: true,
+  loop: true,
   smartSpeed: 500,
   responsive: {
     0: {

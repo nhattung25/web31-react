@@ -5,14 +5,14 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 
-const options2 = {
+const options1 = {
   margin: 15,
   responsiveClass: true,
   nav: true,
   dots: false,
   autoplay: true,
   loop: true,
-  smartSpeed: 900,
+  smartSpeed: 1000,
   responsive: {
     0: {
       items: 1,
@@ -31,6 +31,27 @@ const options2 = {
     },
     1000: {
       items: 4,
+    },
+  },
+};
+
+const options2 = {
+  margin: 15,
+  responsiveClass: true,
+  nav: true,
+  dots: false,
+  autoplay: true,
+
+  loop: true,
+  smartSpeed: 800,
+  responsive: {
+    0: {
+      items: 1,
+      margin: 40,
+    },
+
+    1000: {
+      items: 2,
     },
   },
 };
@@ -136,7 +157,7 @@ export default function Home() {
             <div role="tabpanel" className="tab-pane active" id="home">
               <div className="container">
                 <div className="new-product">
-                  <OwlCarousel className="owl-carousel owl-theme" {...options2}>
+                  <OwlCarousel className="owl-carousel owl-theme" {...options1}>
                     <a href="./detail-product.html?id=8">
                       <div className="item-card">
                         <div className="item-content">
@@ -325,7 +346,7 @@ export default function Home() {
                 <div className="new-product">
                   <OwlCarousel
                     className="owl-3 owl-carousel owl-theme"
-                    {...options2}
+                    {...options1}
                   >
                     <a href="./detail-product.html?id=11">
                       <div className="item-card">
@@ -540,14 +561,7 @@ export default function Home() {
                 <div className="sale-off-banner">
                   <OwlCarousel
                     className="owl-3 owl-carousel owl-theme"
-                    loop
-                    margin={20}
-                    center:false
-                    autoplay
-                    autoplayTimeout={5000}
-                    smartSpeed={1200}
-                    items={2}
-                    dots:false
+                    {...options2}
                   >
                     <a href="./detail-product.html?id=7">
                       <div className="sale-off-item">

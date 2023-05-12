@@ -42,9 +42,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.sale-off-banner .owl-dots {
-  display: none;
-}
+   
 .owl-dot {
   width: 50px;
   margin-left: 10px;

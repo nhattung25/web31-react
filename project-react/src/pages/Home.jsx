@@ -6,6 +6,9 @@ import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import ProductCard from "../components/ProductCard";
 import { products } from "./products";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+
 
 const options1 = {
   margin: 15,

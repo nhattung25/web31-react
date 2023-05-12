@@ -4,6 +4,8 @@ import "../css/base.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
+import ProductCard from "../components/ProductCard";
+import { products } from "./products";
 
 const options1 = {
   margin: 15,
@@ -57,6 +59,10 @@ const options2 = {
 };
 
 export default function Home() {
+  const itemCard = products.map((product) => (
+    <ProductCard key={product} product={product} />
+  ));
+
   return (
     <div>
       <div className="main-content">
@@ -674,43 +680,7 @@ export default function Home() {
           </div>
           <div className="cat-listing">
             <div className="container">
-              <div className="row d-flex">
-                <div className="col-12 col-sm-6 col-md-3">
-                  <div className="item-card">
-                    <div className="item-content">
-                      <div className="card-thumbnail">
-                        <img
-                          src="./product-thumbnails/cat-thumbnail/munchkin-xam-xanh-tai-cup-anh-bia-400x400.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div className="card-content">
-                        <div className="card-name">Mèo xám chân ngắn</div>
-                        <div className="card-price">15.000.000 ₫</div>
-                        <div className="card-meta">
-                          <div className="card-rate">
-                            4
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width={16}
-                              height={16}
-                              fill="currentColor"
-                              className="bi bi-star-fill"
-                              viewBox="0 0 16 16"
-                            >
-                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                            </svg>
-                          </div>
-                          <div className="card-sale">8 lượt mua</div>
-                        </div>
-                      </div>
-                      <div className="buy">
-                        <button className="buy-btn">Thêm vào giỏ</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div className="row d-flex">{itemCard}</div>
             </div>
           </div>
         </section>

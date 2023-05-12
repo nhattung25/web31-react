@@ -5,6 +5,35 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 
+const options2 = {
+  margin: 20,
+  responsiveClass: true,
+  nav: true,
+  dots: false,
+  autoplay: false,
+  smartSpeed: 500,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    400: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    700: {
+      items: 2,
+    },
+    800: {
+      items: 3,
+    },
+    1000: {
+      items: 4,
+    },
+  },
+};
+
 export default function Home() {
   return (
     <div>
@@ -106,7 +135,7 @@ export default function Home() {
             <div role="tabpanel" className="tab-pane active" id="home">
               <div className="container">
                 <div className="new-product">
-                  <OwlCarousel className="owl-carousel owl-theme">
+                  <OwlCarousel className="owl-carousel owl-theme" {...options2}>
                     <a href="./detail-product.html?id=8">
                       <div className="item-card">
                         <div className="item-content">
@@ -295,14 +324,7 @@ export default function Home() {
                 <div className="new-product">
                   <OwlCarousel
                     className="owl-3 owl-carousel owl-theme"
-                    loop
-                    margin={20}
-                    center:false
-                    autoplay
-                    autoplayTimeout={5000}
-                    smartSpeed={1200}
-                    items={2}
-                    dots:false
+                    {...options2}
                   >
                     <a href="./detail-product.html?id=11">
                       <div className="item-card">

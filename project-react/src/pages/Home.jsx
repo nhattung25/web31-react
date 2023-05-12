@@ -294,15 +294,15 @@ export default function Home() {
               <div className="container">
                 <div className="new-product">
                   <OwlCarousel
-                    className="owl-carousel owl-theme"
+                    className="owl-3 owl-carousel owl-theme"
                     loop
-                    margin={24}
-                    center
+                    margin={20}
+                    center:false
                     autoplay
-                    smartSpeed={500}
-                    items={4}
+                    autoplayTimeout={5000}
+                    smartSpeed={1200}
+                    items={2}
                     dots:false
-                    nav
                   >
                     <a href="./detail-product.html?id=11">
                       <div className="item-card">
@@ -643,7 +643,7 @@ export default function Home() {
                     <div className="item-content">
                       <div className="card-thumbnail">
                         <img
-                          src="./img/cat-thumbnail/munchkin-xam-xanh-tai-cup-anh-bia-400x400.jpg"
+                          src="./product-thumbnails/cat-thumbnail/munchkin-xam-xanh-tai-cup-anh-bia-400x400.jpg"
                           alt=""
                         />
                       </div>
@@ -694,7 +694,7 @@ export default function Home() {
                       <div className="item-content">
                         <div className="card-thumbnail">
                           <img
-                            src="./img/cat-thumbnail/munchkin-xam-xanh-tai-cup-anh-bia-400x400.jpg"
+                            src="./product-thumbnails/cat-thumbnail/munchkin-xam-xanh-tai-cup-anh-bia-400x400.jpg"
                             alt=""
                           />
                         </div>
@@ -746,7 +746,7 @@ export default function Home() {
                     <div className="item-content">
                       <div className="card-thumbnail">
                         <img
-                          src="./img/cat-thumbnail/munchkin-xam-xanh-tai-cup-anh-bia-400x400.jpg"
+                          src="./product-thumbnails/cat-thumbnail/munchkin-xam-xanh-tai-cup-anh-bia-400x400.jpg"
                           alt=""
                         />
                       </div>

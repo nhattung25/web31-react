@@ -1,0 +1,58 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+button {
+  background-color: #170f23 !important;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.function-bar {
+  width: 1200px;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #170f23;
+}
+
+.music-info {
+  display: flex;
+  color: white;
+  gap: 10px;
+  align-items: center;
+}
+
+.thumbnail img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.function-button {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.volume-button input {
+  color: white !important;
+
+}
+.song-info {
+  width: 250px;
+}
+.btn{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
